@@ -1,0 +1,176 @@
+ul,
+li {
+    list-style: none;
+    padding: 0;
+}
+
+div>ul {
+    display: flex;
+    margin-left: 10px;
+}
+
+li {
+    padding: 14px;
+}
+
+body {
+    font-family: 'Caveat', cursive;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    text-align: center;
+    background: linear-gradient(to top right, #0066ff 16%, #ffffff 66%);
+}
+
+.bg {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calc {
+    position: relative;
+    box-shadow: 1px 1px 1px 1px white;
+    width: 400px;
+    box-shadow: -4px 5px 18px 5px black;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.calc::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(https://1.bp.blogspot.com/-0-4QCTtlSac/X9DRNH5kdeI/AAAAAAABAl8/r_mu0K1KiWkVioQ9ylDlMfSG2SlJX-4rwCLcBGAsYHQ/s768/snejinka_DoV%2B%2528221%2529.png);
+    background-position: revert;
+    opacity: .7;
+    z-index: -1;
+}
+
+.elements {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 20%;
+}
+
+.elements>li {
+    color: rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgb(80 128 226);
+    font-size: 30px;
+    font-weight: 900;
+    border-radius: 10px;
+}
+
+.elements>li:hover {
+    background-color: rgb(233 233 238 / 40%);
+    color: rgba(1, 1, 8, 0.8);
+    transition: ease-in-out .2s;
+}
+
+.elements>li:active {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.display {
+    width: 100%;
+    word-break: break-all;
+    min-height: 85px;
+    background-color: rgb(190, 190, 190);
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    flex-wrap: wrap;
+    padding: 10px 20px 10px 20px;
+    font-size: 40px;
+    flex-direction: row-reverse;
+}
+
+.numbers {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 0;
+    justify-content: center;
+}
+
+.numbers>li {
+    color: white;
+    width: 17%;
+    background-color: rgba(1, 1, 8, 0.5);
+    font-size: 40px;
+    font-weight: 900;
+    border: 3px solid rgba(255, 255, 255, .3);
+    border-radius: 9px;
+}
+
+.numbers>li:hover {
+    background-color: rgb(233 233 238 / 40%);
+    color: rgba(1, 1, 8, 0.8);
+    transition: ease-in-out .2s;
+    border: 3px solid rgb(233 233 238 / 10%);
+}
+
+.bottom-side-buttons-reset ul li:hover {
+    background-color: rgb(233 233 238 / 40%);
+    color: rgba(1, 1, 8, 0.8);
+    transition: ease-in-out .2s;
+    border: px solid rgb(1 1 1 / 50%);
+}
+
+.bottom-side-buttons-reset ul li:active {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.numbers>li:active {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* #zero {
+    margin-left: 50px;
+} */
+
+.bottom-side {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    margin-right: 13px;
+}
+
+.bottom-side-buttons-reset {
+    display: flex;
+    justify-content: space-around;
+}
+
+.bottom-side-buttons-reset ul li {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    width: 27px;
+    height: 10px;
+    margin: 0px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(1, 1, 8, 0.5);
+    font-size: 18px;
+    font-weight: 900;
+    border-radius: 10px;
+}
+
+.bot-calt {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
